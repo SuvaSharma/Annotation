@@ -46,3 +46,4 @@ from django.db import models
 class PDFAnnotation(models.Model):
     token = models.CharField(max_length=10, unique=True)
     pdf_data = models.TextField()
+

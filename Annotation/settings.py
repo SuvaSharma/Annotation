@@ -10,12 +10,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = 'django-insecure-(2wml1uf2e0(8sh9tjr@w%(c6)#0wf^3yjqrw4)xedr@-vd!+3'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
+DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split (" ")
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -64,19 +65,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Annotation.wsgi.application'
 
 
-# DATABASE_URL = os.environ.get('DATABASE_URL')
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pdf_anno',  
-        'USER': 'postgres',  
-        'PASSWORD': '12345', 
-        'HOST': 'localhost', 
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'djangoproject',   
+        'USER': 'demo',
+        'PASSWORD': 'password',   
+        'HOST': '3.25.169.219',   
         'PORT': '5432',   
     }
 }
-database_url = os.environ.get("DATABASE_URL")
-DATABASES["default"] = dj_database_url.parse(database_url)
+
 #
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
