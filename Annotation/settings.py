@@ -1,7 +1,6 @@
 
 from pathlib import Path
 import os
-import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -70,7 +69,7 @@ DATABASES = {
         'NAME': 'djangoproject',   
         'USER': 'demo',
         'PASSWORD': 'password',   
-        'HOST': '3.25.169.219',   
+        'HOST': '13.238.152.146',   
         'PORT': '5432',   
     }
 }
