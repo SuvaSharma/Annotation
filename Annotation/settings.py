@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-(2wml1uf2e0(8sh9tjr@w%(c6)#0wf^3yjqrw4)xedr@-vd!+3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.238.152.146', 'localhost', '127.0.0.1', 'https://pdf.psytas.com', 'http://pdf.psytas.com']
+ALLOWED_HOSTS = ['13.238.152.146', 'localhost', '127.0.0.1', 'https://pdf.psytas.com', 'http://pdf.psytas.com', 'pdf.psytas.com']
 
 
 # Application definition
